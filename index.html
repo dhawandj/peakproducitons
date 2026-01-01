@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Productions | Global Film & Photo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="peak-proudction-favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --peak-dark: #06201b; /* Deep Dark Green from image */
+            --peak-gold: #e1c58e; /* Warm Pale Gold from image */
+            --peak-gold-muted: rgba(225, 197, 142, 0.4);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--peak-dark);
+            color: #f8fafc;
+        }
+        .font-heading {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .font-sans-alt {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glass {
+            background: rgba(6, 32, 27, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(225, 197, 142, 0.1);
+        }
+        .peak-gradient {
+            background: linear-gradient(135deg, #e1c58e 0%, #c1a46b 100%);
+        }
+        .peak-text-gradient {
+            background: linear-gradient(to right, #f4e8c1, #e1c58e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .peak-border-gold {
+            border-color: rgba(225, 197, 142, 0.3);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-anim {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
